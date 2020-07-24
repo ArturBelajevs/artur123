@@ -56,17 +56,17 @@ public class CountUniqueWords {
                 "If one endevours to study various English language courses taught today, we would find almost no immediate similarities between Modern English and Old English. English grammar has become exceedingly refined (even though smartphone messaging have made a mockery of the English language itself) where perfect living examples would be that of the current British Royal Family. This has given many an idea that speaking proper English is a touch snooty and high-handed. Before you scoff, think about what you have just read. The basic history and development of a language that literally spawned from the embers of wars fought between ferocious civilisations. Imagine everything that our descendants went through, their trials and tribulations, their willingness to give up everything in order to achieve freedom of speech and expression.\n" +
                 "Everything has lead up to this point where English learners decide to study the language at their fancy, something we take for granted as many of us have access to courses to improve English at the touch of a button!\n" +
                 "Perhaps you’re a fan of Shakespeare, maybe you’re more intune with John Milton or J.K. Rowling? Whatever you fancy, these authors, poets and playwrights bring to life more than just words on a page. With them comes a living history that continues to evolve to this day!\n" +
-                "\n"; 
+                "\n";
         text = text.replaceAll("[^A-Za-zА-Яа-я0-9]", " ");
         String[] words = text.split(" ");
 
         for (String word : words) {
-             System.out.println(word);
+            System.out.println(word);
+
         }
 
         HashMap<String, Integer> bookUniqueWords = new HashMap<String, Integer>();
         bookUniqueWords.put("the", 1);
-
 
         for (Map.Entry<String, Integer> entry : bookUniqueWords.entrySet()) {
             System.out.println(entry.getKey()); // otvet the student is
@@ -81,3 +81,5 @@ public class CountUniqueWords {
 4. .... и тд... в таком стиле :)
 
 transient Node < K, V> [] table – сама хеш-таблица, реализованная на основе массива, для хранения пар «ключ-значение» в виде узлов. Здесь хранятся наши Node;*/
+
+//test
